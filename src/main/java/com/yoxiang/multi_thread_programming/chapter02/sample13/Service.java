@@ -2,7 +2,7 @@ package com.yoxiang.multi_thread_programming.chapter02.sample13;
 
 /**
  * Author: Rivers
- * Date: 2018/1/2 06:37
+ * Date: 2018/1/2 06:sample37
  */
 public class Service {
 

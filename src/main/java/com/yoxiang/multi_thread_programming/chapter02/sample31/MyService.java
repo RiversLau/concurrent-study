@@ -2,7 +2,7 @@ package com.yoxiang.multi_thread_programming.chapter02.sample31;
 
 /**
  * Author: Rivers
- * Date: 2018/1/3 21:37
+ * Date: 2018/1/3 21:sample37
  */
 public class MyService {
     private String lock = "123";

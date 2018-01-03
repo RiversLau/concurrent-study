@@ -2,7 +2,7 @@ package com.yoxiang.multi_thread_programming.chapter01.is_alive;
 
 /**
  * Author: Rivers
- * Date: 2017/12/25 21:37
+ * Date: 2017/12/25 21:sample37
  */
 public class RunTest2 {
 

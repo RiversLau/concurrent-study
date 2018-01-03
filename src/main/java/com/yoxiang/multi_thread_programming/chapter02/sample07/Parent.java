@@ -2,7 +2,7 @@ package com.yoxiang.multi_thread_programming.chapter02.sample07;
 
 /**
  * Author: Rivers
- * Date: 2018/1/1 17:37
+ * Date: 2018/1/1 17:sample37
  */
 public class Parent {
 
