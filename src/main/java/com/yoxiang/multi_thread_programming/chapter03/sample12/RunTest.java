@@ -1,7 +1,8 @@
 package com.yoxiang.multi_thread_programming.chapter03.sample12;
 
 /**
- * 程序运行会出现假死情况，所有的线程都处于waiting状态
+ * 程序运行会出现假死情况，所有的线程都处于waiting状态；将所有的notify方法替换为notifyAll方法可以解决
+ * 此问题
  * Author: Rivers
  * Date: 2018/1/6 10:53
  */

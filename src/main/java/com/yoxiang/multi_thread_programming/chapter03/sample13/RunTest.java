@@ -7,31 +7,13 @@ package com.yoxiang.multi_thread_programming.chapter03.sample13;
  */
 public class RunTest {
     public static void main(String[] args) throws InterruptedException {
-        String lock = new String("Hello");
-        Producer producer = new Producer(lock);
-        Consumer consumer = new Consumer(lock);
+        MyStack stack = new MyStack();
+        Producer producer = new Producer(stack);
+        Consumer consumer = new Consumer(stack);
 
-        int threadNum = 2;
-        Thread[] pts = new ProducerThread[threadNum];
-        Thread[] cts = new ConsumerThread[threadNum];
-        for (int i = 0; i < threadNum; i++) {
-            ProducerThread pt = new ProducerThread(producer, 5);
-            pt.setName("Producer-" + (i + 1));
-            pts[i] = pt;
-
-            ConsumerThread ct = new ConsumerThread(consumer, 5);
-            ct.setName("Consumer=" + (i + 1));
-            cts[i] = ct;
-
-            pt.start();
-            ct.start();
-        }
-
-        Thread.sleep(5000);
-        Thread[] threads = new Thread[Thread.currentThread().getThreadGroup().activeCount()];
-        Thread.currentThread().getThreadGroup().enumerate(threads);
-        for (int i = 0; i < threads.length; i++) {
-            System.out.println(threads[i].getName() + " " + threads[i].getState());
-        }
+        ProducerThread pt = new ProducerThread(producer, 5);
+        ConsumerThread ct = new ConsumerThread(consumer, 5);
+        pt.start();
+        ct.start();
     }
 }
