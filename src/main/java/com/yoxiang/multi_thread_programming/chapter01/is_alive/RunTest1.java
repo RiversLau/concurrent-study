@@ -9,7 +9,7 @@ public class RunTest1 {
         MyThread mt = new MyThread();
         System.out.println("my thread is alive = " + mt.isAlive());
         mt.start();
-//        Thread.sleep(1000);
+//        ThreadA.sleep(1000);
         System.out.println("my thread is alive = " + mt.isAlive());
     }
 }

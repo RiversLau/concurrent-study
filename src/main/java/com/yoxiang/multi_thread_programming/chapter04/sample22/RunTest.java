@@ -24,7 +24,7 @@ public class RunTest {
                         conditionA.await();
                     }
                     for (int i = 0; i < 3; i++) {
-                        System.out.println("Thread-A=" + (i + 1));
+                        System.out.println("ThreadA-A=" + (i + 1));
                     }
                     NEXT_NUM = 2;
                     conditionB.signalAll();
@@ -44,7 +44,7 @@ public class RunTest {
                         conditionB.await();
                     }
                     for (int i = 0; i < 3; i++) {
-                        System.out.println("Thread-B=" + (i + 1));
+                        System.out.println("ThreadA-B=" + (i + 1));
                     }
                     NEXT_NUM = 3;
                     conditionC.signalAll();
@@ -64,7 +64,7 @@ public class RunTest {
                         conditionC.await();
                     }
                     for (int i = 0; i < 3; i++) {
-                        System.out.println("Thread-C=" + (i + 1));
+                        System.out.println("ThreadA-C=" + (i + 1));
                     }
                     NEXT_NUM = 1;
                     conditionA.signalAll();

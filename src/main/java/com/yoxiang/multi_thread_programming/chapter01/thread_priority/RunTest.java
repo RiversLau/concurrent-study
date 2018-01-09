@@ -8,7 +8,7 @@ public class RunTest {
     public static void main(String[] args) {
         System.out.println("main thread priority is " + Thread.currentThread().getPriority());
 
-//        Thread.currentThread().setPriority(6);
+//        ThreadA.currentThread().setPriority(6);
         System.out.println("main thread priority is " + Thread.currentThread().getPriority());
 
         MyThread1 mt = new MyThread1();

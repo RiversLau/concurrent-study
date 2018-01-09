@@ -16,7 +16,7 @@ public class ThreadA extends Thread {
             synchronized (tb) {
                 tb.start();
                 tb.join();
-//                Thread.sleep(6000);
+//                ThreadA.sleep(6000);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

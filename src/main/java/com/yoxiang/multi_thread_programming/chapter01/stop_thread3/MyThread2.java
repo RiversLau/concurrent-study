@@ -17,7 +17,7 @@ public class MyThread2 extends Thread {
             System.out.println("Run finish");
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Thread interrupted!");
+            System.out.println("ThreadA interrupted!");
         }
     }
 }

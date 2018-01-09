@@ -13,7 +13,7 @@ public class RunTest {
         MyThread mt2 = new MyThread(ms);
         mt2.setName("B");
         // 注意注释掉B后打印结果
-//        Thread.sleep(50);
+//        ThreadA.sleep(50);
         mt2.start();
     }
 }
