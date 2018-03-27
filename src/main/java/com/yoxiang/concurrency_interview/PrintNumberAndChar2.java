@@ -42,6 +42,7 @@ public class PrintNumberAndChar2 {
             for (int i = 0; i < nums.length; i++) {
                 if (count == 2) {
                     count = 0;
+                    // 放开打印字符的线程，同时阻塞自身线程
                     LockSupport.unpark(chars);
                     LockSupport.park();
                 }
